@@ -6,13 +6,13 @@ namespace Banque
     {
         static void Main(string[] args)
         {
-            Compte compteCourantNicolas = new Compte() { Proprietaire= "Nicolas" };
+            Compte compteCourantNicolas = new CompteCourant() { Proprietaire= "Nicolas", Decouvert=2000 };
             //compteCourantNicolas.Proprietaire = "Nicolas";
 
-            Compte compteEpargneNicolas = new Compte() { Proprietaire = "Nicolas"};
+            Compte compteEpargneNicolas = new CompteEpargne() { Proprietaire = "Nicolas", Taux = 0.02m };
            // compteEpargneNicolas.Proprietaire = "Nicolas";
 
-            Compte compteCourantJeremy = new Compte() { Proprietaire = "Jeremy"};
+            Compte compteCourantJeremy = new CompteCourant() { Proprietaire = "Jeremy" , Decouvert = 500};
             //compteCourantJeremy.Proprietaire = "Jeremy";
 
             compteCourantNicolas.Crediter(100m);
@@ -25,11 +25,10 @@ namespace Banque
 
 
             Console.WriteLine($"Compte courant de {compteCourantNicolas.Proprietaire} Solde = {compteCourantNicolas.Solde}");
-          
-          
-
             Console.WriteLine($"Compte epargne de {compteEpargneNicolas.Proprietaire} Solde = {compteEpargneNicolas.Solde}");
             Console.WriteLine($"Compte courant de {compteCourantJeremy.Proprietaire} Solde = {compteCourantJeremy.Solde}");
+
+            Console.WriteLine("\n");
 
         }
     }

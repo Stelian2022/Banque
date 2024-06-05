@@ -17,6 +17,20 @@
       <FileName>Operation.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Banque.Modeles.CompteCourant">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompteCourant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banque.Modeles.CompteEpargne">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>CompteEpargne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Banque.Modeles.Sens" Collapsed="true">
     <Position X="6" Y="3" Width="1.5" />
     <TypeIdentifier>

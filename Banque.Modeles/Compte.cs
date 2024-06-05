@@ -11,7 +11,7 @@ namespace Banque.Modeles
      
        public string Proprietaire { get; set; }
        private List<Operation> Operations { get; } = new List<Operation>();
-        public decimal Solde => CalculerSolde();
+        public virtual decimal Solde => CalculerSolde();
 
         private decimal CalculerSolde()
         {
