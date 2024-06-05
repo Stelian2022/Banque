@@ -11,7 +11,27 @@ namespace Banque.Modeles
      
        public string Proprietaire { get; set; }
        private List<Operation> Operations { get; } = new List<Operation>();
-        
+        public decimal Solde => CalculerSolde();
+
+        private decimal CalculerSolde()
+        {
+            decimal solde = 0;
+           
+            foreach (var item in Operations)
+            {
+                if (item.Sens == Sens.Credit)
+                {
+                    solde += item.Montant;
+                }
+                else
+                {
+                    solde -= item.Montant;
+
+                }
+            }
+            return solde;
+        }
+
         public void Crediter(decimal montant)
         {
             Operation operation = new Operation(){ Montant = montant,  Sens = Sens.Credit  };
@@ -20,7 +40,7 @@ namespace Banque.Modeles
 
         public void Debiter(decimal montant)
         {
-            Operation operation = new Operation() { Montant = montant, Sens = Sens.Credit };
+            Operation operation = new Operation() { Montant = montant, Sens = Sens.Debit };
             Operations.Add(operation);
 
         }

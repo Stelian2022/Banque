@@ -24,12 +24,12 @@ namespace Banque
             compteCourantJeremy.Debiter(200m, compteCourantNicolas);
 
 
-            Console.WriteLine($"Compte courant de {compteCourantNicolas.Proprietaire}");
+            Console.WriteLine($"Compte courant de {compteCourantNicolas.Proprietaire} Solde = {compteCourantNicolas.Solde}");
           
           
 
-            Console.WriteLine($"Compte epargne de {compteEpargneNicolas.Proprietaire}");
-            Console.WriteLine($"Compte courant de {compteCourantJeremy.Proprietaire}");
+            Console.WriteLine($"Compte epargne de {compteEpargneNicolas.Proprietaire} Solde = {compteEpargneNicolas.Solde}");
+            Console.WriteLine($"Compte courant de {compteCourantJeremy.Proprietaire} Solde = {compteCourantJeremy.Solde}");
 
         }
     }
